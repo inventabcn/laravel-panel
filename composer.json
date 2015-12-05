@@ -1,12 +1,27 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "laravel-panel",
+    "description": "Panel para Laravel Framework 5.1",
+    "keywords": ["framework", "laravel", "Active Directory", "user manager", "barra de depuración", "template", "theme", "Roles"],
     "license": "MIT",
+    "authors": [
+      {
+        "name": "Victor Bondaruk",
+        "email": "info@inventabcn.com"
+      }
+    ],
+    "homepage": "https://github.com/inventabcn/laravel-panel",
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/inventabcn/laravel-panel"
+      }
+    ],
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*",
+        "barryvdh/laravel-debugbar": "*",
+        "zizaco/entrust": "dev-laravel-5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -47,5 +62,7 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
